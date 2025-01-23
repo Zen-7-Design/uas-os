@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Instalasi Kali Linux dengan VirtualBox</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous"></head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container">
+      <a class="navbar-brand" href="#">Panduan Instalasi Kali Linux</a>
+    </div>
+  </nav>
+
+  <!-- Header -->
+  <header class="bg-primary text-white text-center py-5">
+    <div class="container">
+      <h1 class="display-4">Cara Install Kali Linux di VirtualBox</h1>
+      <p class="lead">Panduan lengkap instalasi Kali Linux menggunakan VirtualBox untuk pemula</p>
+    </div>
+  </header>
+
+  <!-- Content Section -->
+  <div class="container my-5">
+    <!-- Step 1 -->
+    <div class="mb-4">
+      <h2>Langkah 1: Unduh Kali Linux</h2>
+      <p>Anda bisa mengunduh ISO Kali Linux dari <a href="https://www.kali.org/get-kali/" target="_blank">situs resmi Kali Linux</a>. Pastikan Anda memilih versi yang sesuai dengan spesifikasi perangkat Anda.</p>
+      <img src="1.png" class="img-fluid" alt="" width="50%">
+    </div>
+
+    <!-- Step 2 -->
+    <div class="mb-4">
+      <h2>Langkah 2: Instal VirtualBox</h2>
+      <p>Jika Anda belum menginstal VirtualBox, silakan unduh dari <a href="https://www.virtualbox.org/" target="_blank">situs resmi VirtualBox</a> dan lakukan instalasi sesuai instruksi yang ada di situs tersebut. Pastikan untuk menyesuaikan OS Yang kamu pakai, Karena saya menggunakan windows maka saya mendownload virtualbox versi Windows</p>
+      <img src="2.png" class="img-fluid" alt="" width="50%">
+    </div>
+
+    <!-- Step 3 -->
+    <div class="mb-4">
+      <h2>Langkah 3: Buat Mesin Virtual Baru</h2>
+      <ol>
+        <li>Buka VirtualBox, klik tombol <strong>New</strong>.</li>
+        <li>Berikan nama mesin virtual, pilih tipe <strong>Linux</strong> dan versi <strong>Debian (64-bit)</strong> (atau sesuai arsitektur ISO Anda).</li>
+        <img src="3.png" class="img-fluid" alt="" width="50%">
+        <li>Atur memori minimal 2 GB, namun disarankan lebih besar untuk performa optimal.</li>
+        <li>Pilih "Create a virtual hard disk now" untuk membuat hard disk virtual baru.</li>
+        <img src="4.png" class="img-fluid" alt="" width="50%">
+      </ol>
+    </div>
+
+    <!-- Step 4 -->
+    <div class="mb-4">
+      <h2>Langkah 4: Instal Kali Linux</h2>
+      <ol>
+        <li>Setelah membuat mesin virtual, klik kanan pada mesin tersebut dan pilih <strong>Settings</strong>.</li>
+        <li>Di bagian <strong>Storage</strong>, klik pada ikon <strong>Empty</strong>, lalu tambahkan file ISO Kali Linux sebagai drive optik.</li>
+        <img src="5.png" class="img-fluid" alt="" width="50%">
+        <li>Jalankan mesin virtual dan ikuti instruksi instalasi Kali Linux. Pilih opsi instalasi yang Anda inginkan (rekomendasi: Install atau Graphical Install).</li>
+        <li>Berikutnya Kita masuk kedalam proses instalasi :
+            Langkah Pertama yaitu memilih bahasa
+         
+        </li>
+        <img src="6.png" class="img-fluid" alt="" width="50%">
+        <li>Setelah Memilih bahasa kita inputkan username dan password untuk OS Kali linux kita
+         
+        </li>
+        <img src="7.png" class="img-fluid" alt="" width="50%">
+        <br>
+        <li>Setelah menginput username dan password serta mensetting zona waktu, kita lanjutkan untuk memilih partisi disk yang sidah kita alokasikan sebelumnya</li>
+        <img src="8.png" class="img-fluid" alt="" width="50%">
+        <br>
+        <li>Setelah memilih partisi disk (Virtual) Kita lanjutkan untuk install Linux Desktop Enviroment, saya sekalian menggunakan GNOME Untuk opsi instalasi saya, jika misal hardware kamu punya spek terbatas pilih saja XFCE</li>
+        <img src="9.png" class="img-fluid" alt="" width="50%">
+        <br>
+        <li>Setelah memilih opsi Linux Desktop Enviroment, next kita pasangkan Boot Loader ke dalam Virtual disk kita</li>
+        <img src="10.png" class="img-fluid" alt="" width="50%">
+        <br>
+        <li>Setelah semuanya siap dan telah memasang bootloader kita tinggal pilih "Next" dan Kali Linux akan di install secara penuh di virtualbox kita, waktu instalasi akan tergantung pada hardware masing-masing, jika kita memakai SSD Waktu instalasi akan jauh lebih cepat, Begiitu sebaliknya dengan HDD Waktu instalasi akan terasa lebih lambat </li>
+        <img src="11.png" class="img-fluid" alt="" width="50%">
+      </ol>
+    </div>
+
+    <!-- Final Step -->
+    <div class="mb-4">
+      <h2>Langkah 5: Mulai Menggunakan Kali Linux</h2>
+      <p>Setelah instalasi selesai, Daan VOILA...... Kali Linux kita sudah terinstall sepenuhnya di Virtualbox</p>
+      <img src="12.png" class="img-fluid" alt="" width="50%">
+    </div>
+  </div>
+
+  
+
+  <!-- Footer -->
+  <footer class="bg-dark text-white text-center py-3">
+    <p class="mb-0">© 2024 Panduan Instalasi Kali Linux. Dibuat oleh Muhammad Fatikhul Azkia</p>
+  </footer>
+
+  <!-- Pagination -->
+  <div class="container my-3">
+    <nav aria-label="Page navigation">
+      <ul class="pagination justify-content-center">
+        <li class="page-item disabled">
+          <a class="page-link" href="#" tabindex="-1">Previous</a>
+        </li>
+        <li class="page-item active">
+          <a class="page-link" href="halaman1.html">1</a>
+        </li>
+        <li class="page-item">
+          <a class="page-link" href="halaman2.html">2</a>
+        </li>
+        <li class="page-item">
+          <a class="page-link" href="halaman2.html">Next</a>
+        </li>
+      </ul>
+    </nav>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+</body>
+</html>
